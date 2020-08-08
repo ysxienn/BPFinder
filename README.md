@@ -3,9 +3,12 @@
 **BPFinder** consists of three main steps: **First**, BPFinder finds linear pathways from source to target by tracking the movement of atom groups through metabolic networks. **Second**, BPFinder determines the branched compounds in the linear pathways based on the structure of the conserved atom groups from the source compound, and merges these linear pathways into branched metabolic pathways by the branched compounds. **Finally**, BPFinder sorts the resulting branched pathways by the combined information of reaction thermodynamics, compound similarity and the conserved atom groups to pick out more biochemically feasible branched metabolic pathways for the user.
 
 # Requirements and installation
-1. BPFinder was written and tested on Java with version "1.8.0_201". Environment of **Java version with "1.8.0_201"(or higher)** need to be installed to work with BPFinder.
-2. The data of metabolic network supporting BPFinder to find branched pathways are preserved in Database MySQL with version "8.0.14". To work with BPFinder, **Database MySQL with version "8.0.14"(or higher)** need to be installed. 
-3. For outputing ranked resulting branched pathways by directed graph, BPFinder use graph visualization software **graphViz with version "2.38.0"** to visualize a graph. Users need to install graphViz with version "2.38.0"(or higher) to obtain the resulting branched pathways by directed graph.
+1. BPFinder was written and tested on Java with version "1.8.0_201". **Java with version "1.8.0_201"(or higher)** need to be installed to work with BPFinder.
+2. The data required for BPFinder program to find branched pathways are preserved in MySQL Database with version "8.0.14". To work with BPFinder, **MySQL Database with version "8.0.14"(or higher)** need to be installed. 
+3. To output resulting branched pathways by directed graph, the results can be visualized using the graph visualization software graphViz with version "2.38.0". Users can install **graphViz with version "2.38.0"(or higher)** to obtain the resulting branched pathways by directed graph.
+
+# Download data and program
+BPFinder program is packaged as a JAR bundle called BPFinder.jar. To provide ease of use, users can download **BPFinder.jar** to run BPFinder with command line(see detail in <a  href="#1">Usage</a>). 
 
 # Dataset Preparation
 To import the data of metabolic network, the user should type the command lines as follows: 
@@ -16,7 +19,7 @@ To import the data of metabolic network, the user should type the command lines 
 5. enter database fga with command line ```use fga```
 6. import the data fga.sql with command line ```source D://fga.sql```(assume fga.sql is under D://)
 
-# Usage
+<a name="1"># Usage</a>
 BPFinder can run in command line as follows:
 
 ```java -jar (the path of BPFinder.jar) (the path of setting file) ```
