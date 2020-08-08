@@ -12,7 +12,7 @@ BPFinder program is packaged as a JAR bundle called BPFinder.jar. To provide eas
 
 # Dataset Preparation
 <a name="2">Assume that in MySQL, user stores data in database ‘fga’, the user name is “root”, password is “123456”, the directory of config.txt is "D:\\config.txt", the followings are the command and operation on Microsoft Windows 6.1.7601</a> for adding data to MySQL Database.
-1. Download **fga.sql** from git
+1. Download **fga.sql**.
 2. Enter mysql with command line ``` mysql -u -root -p ``` and input the password "123456"
 3. Create database "fga" with command line ```create database fga;```
 4. Enter database "fga" with command line ```use fga;```
@@ -27,7 +27,7 @@ BPFinder program is packaged as a JAR bundle called BPFinder.jar. To provide eas
 
 **the directory of configure file** is the directory of the configure file.
 
-For example: ```java -jar D://BPFinder.jar D:\\configure.txt ```
+For example: ```java -jar D:\\BPFinder.jar D:\\configure.txt ```
 And the Search results are in "resultDirectory" which is specified by user in "config.txt".
 
 # Running parameters
@@ -45,7 +45,7 @@ And the Search results are in "resultDirectory" which is specified by user in "c
 | aP | aP is a weight parameter for BPFinder, which is used to adjust the relative weights of the branched compounds when ranking the resulting pathways.| 0.8 |
 | resultVisualization | If "true", the output are a set of ranked resulting branched pathways and are shown by directed graph. | true |
 | graphVizDirectory | The directory of graphViz "dot.exe" file, users should install the graphViz and copy "dot.exe" file from graphViz installation directory to this directory.| D:\\graphviz\\bin\\dot.exe |
-| resultDirectory | The directory of searching results, users can find the running results of the program in this directory. | D:\\save\\ |
+| resultDirectory | The directory of searching results, users can find the running results of the program in this directory. | D:\\results\\ |
 
 
 
