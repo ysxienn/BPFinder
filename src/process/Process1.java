@@ -254,7 +254,7 @@ public class Process1 {
 			parameter = parameter + "\r\n";
 			parameter = parameter + "aPoints:" + aPoints;
 			parameter = parameter + "\r\n";
-			System.out.println(parameter);
+			//System.out.println(parameter);
 		}
 	  
 	  public void startBySingle() {

@@ -88,11 +88,11 @@ public class MyMain {
 				maxPathLength = Integer.parseInt(value);
 			} else if (name.equals("ifPreciseFindBranch")) {
 				ifPreciseFindBranch = Boolean.parseBoolean(value);
-			}*/ else if (name.equals("outputTxtPath")) {
+			}*/ else if (name.equals("resultDirectory")) {
 				saveTxtPath = value;
-			} else if (name.equals("outputPicPath")) {
 				savePicPath = value;
-			} 
+			} /*else if (name.equals("outputPicPath")) {
+			} */
 			  else if (name.equals("mergingStrategy")) {
 				if(value.equals("overlapping"))
 				{
@@ -108,9 +108,9 @@ public class MyMain {
 					ifStartBySingle = false;
 			} /*else if (name.equals("ifAbundant")) {
 				ifAbundant = Boolean.parseBoolean(value);
-			}*/ else if (name.equals("whetherResultIsShownByGraph")) {
+			}*/ /*else if (name.equals("whetherResultIsShownByGraph")) {
 				ifDraw = Boolean.parseBoolean(value);
-			} else if (name.equals("graphVizPath")) {
+			} */else if (name.equals("graphVizDirectory")) {
 				graPhVizPath = value;
 			}
 		}
